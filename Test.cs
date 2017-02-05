@@ -5,7 +5,7 @@ using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Appium.Android;
 
-//https://www.youtube.com/watch?v=rEOpP_fx_eI#start=0:00;end=8:55;cycles=-1;autoreplay=false
+
 namespace moodleTest
 {
 
