@@ -16,7 +16,7 @@ namespace moodleTest
 
 		private String MOODLE_SITE = "http://46.101.125.192/moodle/";
 		private String MOODLE_USERNAME = "admin";
-		private String MOODLE_PASSWORD = "Ch!3eDre=er5";
+		private String MOODLE_PASSWORD = "yourscrete";
 		private String SEARCH_TEXT = "Data Structures";
 		private Uri TEST_ENDPOINT = new Uri("http://127.0.0.1:4723/wd/hub"); // If Appium is running locally
 		private TimeSpan INIT_TIMEOUT_SEC = TimeSpan.FromSeconds(300); /* Change this to a more reasonable value */
@@ -44,16 +44,16 @@ namespace moodleTest
 		}
 
 
-		[Test]
-		public void a_appLoaded()
+		[Test, Order(1)]
+		public void zappLoaded()
 		{
 			//verify if the application is launched
 			Assert.IsNotNull(driver.Context);
 			wait(1000);
 		}
 
-		[Test]
-		public void b_connectSite()
+		[Test, Order(2)]
+		public void connectSite()
 		{
 			
 			AndroidElement siteTxtBox = find("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.webkit.WebView[1]/android.webkit.WebView[1]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[3]/android.view.View[1]/android.view.View[1]/android.view.View[1]/android.view.View[2]/android.view.View[1]/android.view.View[1]/android.widget.EditText[1]");
